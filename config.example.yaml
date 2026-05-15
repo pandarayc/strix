@@ -1,0 +1,44 @@
+# Ergate configuration example
+# Copy this file to ~/.config/ergate/config.yaml
+
+# LLM provider: "anthropic" | "openai" | "deepseek"
+# Use "openai" with custom base_url for any OpenAI-compatible API
+api_provider: "anthropic"
+
+# Your API key (can also be set via ERGATE_API_KEY env var)
+# api_key: "sk-ant-..."
+
+# Base URL for the API
+base_url: "https://api.anthropic.com/v1"
+
+# Model to use
+model: "claude-sonnet-4-20250514"
+
+# Engine settings
+max_turns: 25
+max_tokens: 8192
+temperature: 0
+
+# Permissions: "always" (auto-approve everything), "normal" (prompt), "bypass" (no prompts)
+permission_mode: "normal"
+
+# Allowed paths (empty = no restrictions)
+# allowed_paths:
+#   - /home/user/projects
+
+# Blocked shell commands
+# blocked_commands:
+#   - rm -rf /
+#   - sudo
+
+# Session storage
+# session_dir: "~/.local/share/ergate/sessions"
+
+# Theme: "dark" or "light"
+theme: "dark"
+
+# Headless mode (no TUI)
+# headless: false
+
+# Feature flags
+# enable_mcp: false
